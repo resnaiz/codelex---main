@@ -9,14 +9,14 @@ namespace VariablesAndNames
             int cars, drivers, passengers, carsStop, carsDriven;
             double seatsInCar, carpoolCapacity, averagePassengersPerCar;
 
-            cars = 100; //cars
-            seatsInCar = 4.0; //seats in a car
-            drivers = 28; // drivers
-            passengers = 90; // passengers
-            carsStop = cars - drivers;// free cars
-            carsDriven = cars - carsStop; // cars driven at the moment
-            carpoolCapacity = carsDriven * seatsInCar;// carpool capacity
-            averagePassengersPerCar = passengers / carsDriven;// average passengers per car
+            cars = 100;
+            seatsInCar = 4.0; 
+            drivers = 28;
+            passengers = 90; 
+            carsStop = cars - drivers;
+            carsDriven = cars - carsStop; 
+            carpoolCapacity = carsDriven * seatsInCar;
+            averagePassengersPerCar = passengers / carsDriven;
 
             Console.WriteLine("There are " + cars + " cars available.");
             Console.WriteLine("There are only " + drivers + " drivers available.");
