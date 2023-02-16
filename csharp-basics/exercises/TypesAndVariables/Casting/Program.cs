@@ -23,7 +23,6 @@ namespace Casting
             double d = 4;
             float e = 5;
 
-            //fixme - should be 15 :|
             int sum = int.Parse(a) + b + c + (int)d + (int)e;
             Console.WriteLine(sum);
         }
@@ -36,7 +35,6 @@ namespace Casting
             decimal d = 4.2m;
             decimal e = 5.3m;
 
-            //fixme - should be 15.5 :| 
             decimal sum = decimal.Parse(a) + b + c + d + e;
             Console.WriteLine(sum);
         }
