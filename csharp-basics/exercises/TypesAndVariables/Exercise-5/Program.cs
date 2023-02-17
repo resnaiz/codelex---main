@@ -25,14 +25,14 @@ namespace Exercise_5
             string teacher8 = "Mr. James";
 
             Console.WriteLine("+------------------------------------------------------------+");
-            Console.WriteLine("| 1 | {0,-26} | {1,-15} |", class1, teacher1);
-            Console.WriteLine("| 2 | {0,-26} | {1,-15} |", class2, teacher2);
-            Console.WriteLine("| 3 | {0,-26} | {1,-15} |", class3, teacher3);
-            Console.WriteLine("| 4 | {0,-26} | {1,-15} |", class4, teacher4);
-            Console.WriteLine("| 5 | {0,-26} | {1,-15} |", class5, teacher5);
-            Console.WriteLine("| 6 | {0,-26} | {1,-15} |", class6, teacher6);
-            Console.WriteLine("| 7 | {0,-26} | {1,-15} |", class7, teacher7);
-            Console.WriteLine("| 8 | {0,-26} | {1,-15} |", class8, teacher8);
+            Console.WriteLine($"| 1 |                          {class1} |       {teacher1} |");
+            Console.WriteLine($"| 2 |                          {class2} |     {teacher2} |");
+            Console.WriteLine($"| 3 |                         {class3} |       {teacher3} |");
+            Console.WriteLine($"| 4 |                        {class4} |      {teacher4} |");
+            Console.WriteLine($"| 5 |           {class5} |      {teacher5} |");
+            Console.WriteLine($"| 6 |                             {class6} |    {teacher6} |");
+            Console.WriteLine($"| 7 |                        {class7} | {teacher7} |");
+            Console.WriteLine($"| 8 |{class8} |       {teacher8} |");
             Console.WriteLine("+------------------------------------------------------------+");
         }
     }
