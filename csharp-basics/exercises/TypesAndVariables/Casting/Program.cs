@@ -36,7 +36,7 @@ namespace Casting
             float e = 5.3f;
 
             float sum = float.Parse(a) + b + c + (float)d + e;
-            Console.WriteLine(sum);
+            Console.WriteLine(sum); 
         }
     }
 }
