@@ -32,10 +32,10 @@ namespace Casting
             string a = "1";
             int b = 2;
             int c = 3;
-            decimal d = 4.2m;
-            decimal e = 5.3m;
+            double d = 4.2;
+            float e = 5.3f;
 
-            decimal sum = decimal.Parse(a) + b + c + d + e;
+            float sum = float.Parse(a) + b + c + (float)d + e;
             Console.WriteLine(sum);
         }
     }

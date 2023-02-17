@@ -21,9 +21,9 @@ public class Program
         double kilometersPerHour = (distance / 1000.0) / (totalSeconds / 3600.0);
         double milesPerHour = (distance / 1609.0) / (totalSeconds / 3600.0);
 
-        Console.WriteLine("Your speed in meters/second is: " + metersPerSecond.ToString());
-        Console.WriteLine("Your speed in km/h is: " + kilometersPerHour.ToString());
-        Console.WriteLine("Your speed in miles/h is: " + milesPerHour.ToString());
+        Console.WriteLine("Your speed in meters/second is: " + metersPerSecond.ToString("F8"));
+        Console.WriteLine("Your speed in km/h is: " + kilometersPerHour.ToString("F8"));
+        Console.WriteLine("Your speed in miles/h is: " + milesPerHour.ToString("F8"));
     }
 }
 
