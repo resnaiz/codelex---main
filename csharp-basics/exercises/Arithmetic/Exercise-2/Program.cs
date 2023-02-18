@@ -2,7 +2,7 @@
 
 namespace Exercise_2
 {
-    internal class CheckOddEven
+    internal class Program
     {
         static void Main(string[] args)
         {
