@@ -14,7 +14,7 @@ namespace exercise_6
             {
                 if (i % 3 == 0 && i % 5 == 0)
                 {
-                    Console.WriteLine("CozaLoza ");
+                    Console.Write("CozaLoza ");
                 }
                 else if (i % 3 == 0 && i % 7 == 0)
                 {
