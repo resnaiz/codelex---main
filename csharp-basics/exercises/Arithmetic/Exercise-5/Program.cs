@@ -19,7 +19,6 @@ namespace Exercise_5
                     Console.WriteLine($"Sorry, you are too low. I was thinking of {numberGuess}.");
                 }
                 guess = Convert.ToInt32(Console.ReadLine());
-                break;
             }
 
             Console.WriteLine("You guessed it!  What are the odds?!?");
