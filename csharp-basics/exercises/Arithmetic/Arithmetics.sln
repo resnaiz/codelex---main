@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GravityCalculator", "Gravit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SumAverageRunningInt", "SumAverageRunningInt\SumAverageRunningInt.csproj", "{3A626440-B412-47F6-A2D2-2330B1840FD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise-8", "Exercise-8\Exercise-8.csproj", "{46F3130C-2CA0-4A5C-B3C7-FDD640A6AA15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise-8", "Exercise-8\Exercise-8.csproj", "{46F3130C-2CA0-4A5C-B3C7-FDD640A6AA15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise-1", "Exercise-1\Exercise-1.csproj", "{BF36F42C-8135-4BCB-948E-E0AF9DE749C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{46F3130C-2CA0-4A5C-B3C7-FDD640A6AA15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46F3130C-2CA0-4A5C-B3C7-FDD640A6AA15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46F3130C-2CA0-4A5C-B3C7-FDD640A6AA15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF36F42C-8135-4BCB-948E-E0AF9DE749C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF36F42C-8135-4BCB-948E-E0AF9DE749C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF36F42C-8135-4BCB-948E-E0AF9DE749C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF36F42C-8135-4BCB-948E-E0AF9DE749C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
