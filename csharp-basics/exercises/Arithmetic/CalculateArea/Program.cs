@@ -10,7 +10,13 @@ namespace CalculateArea
     {
         static void Main(string[] args)
         {
-           // Get the user's menu choice.
+            // Get the user's menu choice.
+            int choice = GetMenu();
+
+            while (choice != 0)
+            {
+
+            }
         }
 
         public static int GetMenu()
