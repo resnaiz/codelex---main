@@ -11,17 +11,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SumAverageRunningInt", "Sum
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise-8", "Exercise-8\Exercise-8.csproj", "{46F3130C-2CA0-4A5C-B3C7-FDD640A6AA15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise-1", "Exercise-1\Exercise-1.csproj", "{BF36F42C-8135-4BCB-948E-E0AF9DE749C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise-1", "Exercise-1\Exercise-1.csproj", "{BF36F42C-8135-4BCB-948E-E0AF9DE749C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise-2", "Exercise-2\Exercise-2.csproj", "{A5DC7E77-D753-40A1-BC47-1A670D080171}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise-2", "Exercise-2\Exercise-2.csproj", "{A5DC7E77-D753-40A1-BC47-1A670D080171}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise-4", "Exercise-3\Exercise-4.csproj", "{BC454049-147C-4BB0-9EF1-E63C134B3665}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise-4", "Exercise-3\Exercise-4.csproj", "{BC454049-147C-4BB0-9EF1-E63C134B3665}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise-5", "Exercise-5\Exercise-5.csproj", "{92F84139-1139-43D4-963D-A4E29D902C8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise-5", "Exercise-5\Exercise-5.csproj", "{92F84139-1139-43D4-963D-A4E29D902C8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercise-6", "exercise-6\exercise-6.csproj", "{51C3C102-5BB2-4C10-9430-A7E61AC9CC5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "exercise-6", "exercise-6\exercise-6.csproj", "{51C3C102-5BB2-4C10-9430-A7E61AC9CC5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise-9", "Exercise-9\Exercise-9.csproj", "{FE9FED07-74AA-4229-A29D-0B91CE196409}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise-9", "Exercise-9\Exercise-9.csproj", "{FE9FED07-74AA-4229-A29D-0B91CE196409}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise-11", "Exercise-11\Exercise-11.csproj", "{DCB10477-CA47-4327-8868-DD2E28847285}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{FE9FED07-74AA-4229-A29D-0B91CE196409}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE9FED07-74AA-4229-A29D-0B91CE196409}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE9FED07-74AA-4229-A29D-0B91CE196409}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCB10477-CA47-4327-8868-DD2E28847285}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCB10477-CA47-4327-8868-DD2E28847285}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCB10477-CA47-4327-8868-DD2E28847285}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCB10477-CA47-4327-8868-DD2E28847285}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
