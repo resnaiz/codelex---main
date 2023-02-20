@@ -4,7 +4,6 @@ public class Program
 {
     public static string Moran(int num)
     {
-        // Find the sum of digits
         int rem = 0;
         int sum = 0;
         int n = num;
@@ -15,8 +14,6 @@ public class Program
             sum = sum + rem;
             num = num / 10;
         }
-
-        // Check if the number is a Moran number
         bool isMoran = false;
         if (n % sum == 0)
         {
@@ -34,8 +31,6 @@ public class Program
                 }
             }
         }
-
-        // Output the result
         if (isMoran)
         {
             return "M";
@@ -51,9 +46,9 @@ public class Program
     }
     public static void Main()
     {
-        Console.WriteLine(Moran(132)); // Output: H
-        Console.WriteLine(Moran(133)); // Output: M
+        Console.WriteLine(Moran(132));
+        Console.WriteLine(Moran(133));
         Console.WriteLine(Moran(134));
-        Console.WriteLine(Moran(135));// Output: Neither
+        Console.WriteLine(Moran(135));
     }
 }
