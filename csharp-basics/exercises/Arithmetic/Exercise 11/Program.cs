@@ -1,49 +1,39 @@
 ﻿using System;
+using System.Linq;
 
 public class Program
 {
     public static string Moran(int num)
     {
-        int rem = 0;
-        int sum = 0;
-        int n = num;
+        int sum = num.ToString().Sum(digit => digit - '0');
 
-        while (num > 0)
+        if (num % sum == 0)
         {
-            rem = num % 10;
-            sum = sum + rem;
-            num = num / 10;
-        }
-        bool isMoran = false;
-        if (n % sum == 0)
-        {
-            int quotient = n / sum;
-            for (int i = 2; i <= Math.Sqrt(quotient); i++)
+            bool isMoran = true;
+            int txt = num / sum;
+            for (int i = 2; i <= txt / 2; i++)
             {
-                if (quotient % i == 0)
+                if (txt % i == 0)
                 {
                     isMoran = false;
                     break;
                 }
-                else
-                {
-                    isMoran = true;
-                }
             }
-        }
-        if (isMoran)
-        {
-            return "M";
-        }
-        else if (n % sum == 0)
-        {
-            return "H";
+            if (isMoran && txt > 1)
+            {
+                return "M";
+            }
+            else
+            {
+                return "H";
+            }
         }
         else
         {
             return "Neither";
         }
     }
+
     public static void Main()
     {
         Console.WriteLine(Moran(132));
