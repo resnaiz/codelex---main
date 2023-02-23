@@ -32,7 +32,7 @@ namespace Exercise_8
             if (hoursWorked <= 40)
             {
                 return (hoursWorked * basicPay).ToString();
-            }
+            } 
 
             var salary = 40 * basicPay;
             salary += (hoursWorked - 40) * (basicPay * 1.5m);
