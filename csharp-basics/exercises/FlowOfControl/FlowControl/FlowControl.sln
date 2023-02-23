@@ -9,7 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargestNumber", "LargestNum
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TenBillion", "TenBillion\TenBillion.csproj", "{77AB50C0-F0DA-46B0-8299-7AB0B9404B03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetTheCentury", "GetTheCentury\GetTheCentury.csproj", "{3FFBD995-2B38-44A5-BDC8-E1E767E0EFCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetTheCentury", "GetTheCentury\GetTheCentury.csproj", "{3FFBD995-2B38-44A5-BDC8-E1E767E0EFCB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise-4", "Exercise-4\Exercise-4.csproj", "{B08DEB30-AE8A-4103-A2AD-DA904A162E3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise-5", "Exercise-5\Exercise-5.csproj", "{9DF4B9F9-91B7-4E52-AFF6-2588D244895F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{3FFBD995-2B38-44A5-BDC8-E1E767E0EFCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FFBD995-2B38-44A5-BDC8-E1E767E0EFCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FFBD995-2B38-44A5-BDC8-E1E767E0EFCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B08DEB30-AE8A-4103-A2AD-DA904A162E3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B08DEB30-AE8A-4103-A2AD-DA904A162E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B08DEB30-AE8A-4103-A2AD-DA904A162E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B08DEB30-AE8A-4103-A2AD-DA904A162E3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DF4B9F9-91B7-4E52-AFF6-2588D244895F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DF4B9F9-91B7-4E52-AFF6-2588D244895F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DF4B9F9-91B7-4E52-AFF6-2588D244895F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DF4B9F9-91B7-4E52-AFF6-2588D244895F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
