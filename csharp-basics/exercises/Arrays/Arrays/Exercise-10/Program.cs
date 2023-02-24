@@ -39,6 +39,7 @@ namespace Exercise_10
                         sumOfNeg += number;
                     }
                 }
+
                 return new int[] { posCount, sumOfNeg };
             }
         }
