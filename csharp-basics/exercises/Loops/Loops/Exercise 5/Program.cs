@@ -8,7 +8,6 @@ namespace Exercise_5
         {
             Console.WriteLine("Enter first word: ");
             string firstWord = Console.ReadLine();
-
             Console.WriteLine("Enter second word");
             string secondWord = Console.ReadLine();
 
@@ -20,6 +19,7 @@ namespace Exercise_5
             {
                 Console.Write(".");
             }
+
             Console.WriteLine($"{secondWord}");
         }
     }
