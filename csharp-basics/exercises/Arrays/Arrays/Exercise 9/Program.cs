@@ -6,7 +6,7 @@ namespace Exercise_9
     {
         static void Main(string[] args)
         {
-            string[] newArray = { "javascript", "python", "php", "other" };
+            string[] newArray = { "javascript", "python", "php", "oTHER" };
             string[] copyArray = Capitalize(newArray);
             Console.WriteLine("Capitalized array - " + string.Join(", ", copyArray));
         }
@@ -18,8 +18,9 @@ namespace Exercise_9
             for(int i = 0; i < array.Length; i++)
             {
                 string name = array[i].ToLower();
-                namesCap[i] = char.ToUpper(name[0]) + name.Substring(1);
+                namesCap[i] = char.ToUpper(name[0]) + name.Substring(1).ToLower();
             }
+
             return namesCap;
         }
     }
