@@ -12,7 +12,8 @@ namespace TicTacToe
             InitBoard();
             DisplayBoard();
 
-            while(true)
+            bool playGame = true;
+            while(playGame)
             {
                 Console.WriteLine("'" + currPlayer + "', choose your location (row/column):");
                 var input = Console.ReadLine();
@@ -30,7 +31,7 @@ namespace TicTacToe
                     continue;
                 }
 
-                if(row < 0 | row > 2 || collumn < 0 || collumn > 2)
+                if(row < 0 || row > 2 || collumn < 0 || collumn > 2)
                 {
                     Console.WriteLine("Invalid input.");
                     continue;
@@ -45,13 +46,16 @@ namespace TicTacToe
                 board[row, collumn] = currPlayer;
                 DisplayBoard();
 
-                if (checkWinner())
+                if (CheckResult())
                 {
-                    Console.WriteLine( currPlayer + " is winner!");
-                    break;
+                    if (board[row, collumn] == currPlayer)
+                    {
+                        Console.WriteLine(currPlayer + " is winner!");
+                        break;
+                    }
                 }
 
-                if (checkForTie())
+                if(checkForTie())
                 {
                     Console.WriteLine("The game is a tie!");
                     break;
@@ -66,7 +70,9 @@ namespace TicTacToe
             for (var r = 0; r < 3; r++)
             {
                 for (var c = 0; c < 3; c++)
+                {
                     board[r, c] = ' ';
+                }
             }
         }
 
@@ -80,30 +86,17 @@ namespace TicTacToe
             Console.WriteLine("    --+-+--");
         }
 
-        private static bool checkWinner()
+        private static bool CheckResult()
         {
             for(var r = 0; r < 3; r++)
             {
-                if (board[r, 0] == currPlayer && board[r, 1] == currPlayer && board[r, 2] == currPlayer)
+                if (board[r, 0] == currPlayer && board[r, 1] == currPlayer && board[r, 2] == currPlayer || board[0, r] == currPlayer && board[1, r] == currPlayer && board[2, r] == currPlayer)
                 {
                     return true;
                 }
             }
 
-            for (var i = 0; i < 3; i++)
-            {
-                if (board[0, i] == currPlayer && board[1, i] == currPlayer && board[2, i] == currPlayer)
-                {
-                    return true;
-                }    
-            }
-
-            if (board[0, 0] == currPlayer && board[1, 1] == currPlayer && board[2, 2] == currPlayer)
-            {
-                return true;
-            }
-
-            if (board[0, 2] == currPlayer && board[1, 1] == currPlayer && board[2, 0] == currPlayer)
+            if (board[0, 0] == currPlayer && board[1, 1] == currPlayer && board[2, 2] == currPlayer || board[0, 2] == currPlayer && board[1, 1] == currPlayer && board[2, 0] == currPlayer)
             {
                 return true;
             }
@@ -113,9 +106,9 @@ namespace TicTacToe
 
         private static bool checkForTie()
         {
-            for(var r = 0; r < 3; r++)
+            for (var r = 0; r < 3; r++)
             {
-                for(var i = 0; i < 3; i++)
+                for (var i = 0; i < 3; i++)
                 {
                     if (board[r, i] == ' ')
                     {
