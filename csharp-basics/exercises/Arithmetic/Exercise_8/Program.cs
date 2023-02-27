@@ -22,6 +22,7 @@ namespace Exercise_8
             Console.WriteLine($"Employee2 {CalculateSalary(salary2, hoursWorked2)}");
             Console.WriteLine($"Employee3 {CalculateSalary(salary3, hoursWorked3)}");
         }
+
         public static string CalculateSalary(decimal basicPay, int hoursWorked)
         {
             if (basicPay < 8.00m || hoursWorked > 60)
