@@ -8,6 +8,7 @@ namespace Exercise_2
         {
             Console.WriteLine("Enter an integer:");
             int num = int.Parse(Console.ReadLine());
+
             if (num % 2 == 0)
             {
                 Console.WriteLine("Even");
@@ -16,6 +17,7 @@ namespace Exercise_2
             {
                 Console.WriteLine("Odd");
             }
+
             Console.WriteLine("bye!");
         }
     }
