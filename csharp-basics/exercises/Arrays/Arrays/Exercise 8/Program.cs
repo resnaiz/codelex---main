@@ -8,9 +8,9 @@ namespace Exercise_8
     {
         static void Main(string[] args)
         {
-            bool playGame = true;
+            bool shouldContinue = true;
 
-            while (playGame)
+            while (shouldContinue)
             {
                 string[] listOfWords = { "leviathan", "monster", "mammoth", "behemoth", "colossus" };
                 string oneWord = listOfWords[new Random().Next(listOfWords.Length)];
@@ -21,7 +21,9 @@ namespace Exercise_8
                 Console.WriteLine("-=-=-=-=-=-=-=-=-=-=-=-=-=-");
                 Console.WriteLine();
 
-                while (true)
+                bool isValid = false;
+
+                while (!isValid)
                 {
                     Console.Write("Word:\t");
                     foreach (char c in oneWord)
