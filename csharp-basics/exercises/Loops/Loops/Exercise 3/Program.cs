@@ -9,22 +9,29 @@ namespace Exercise_3
             Random randomNumbers = new Random();
             int[] numbersRan = new int[20];
 
-            for(int i = 0; i < 20; i++)
+            for (int i = 0; i < 20; i++)
             {
                 numbersRan[i] = randomNumbers.Next(1, 100);
             }
 
-            Console.WriteLine("Enter position (1-20): ");
-            int newPosition = int.Parse(Console.ReadLine());
+            bool found = false;
 
-            if(newPosition < 1 || newPosition > 20)
+            while(!found)
             {
-                Console.WriteLine("Invalid position.");
-            }
-            else
-            {
-                int number = numbersRan[newPosition - 1];
-                Console.WriteLine($"The number at position {newPosition} is {number}");
+                Console.WriteLine("Enter number: ");
+                int searchNumber = int.Parse(Console.ReadLine());
+
+                int position = Array.IndexOf(numbersRan, searchNumber);
+
+                if (position == -1)
+                {
+                    Console.WriteLine($"The number {searchNumber} is not in any position.");
+                }
+                else
+                {
+                    Console.WriteLine($"The number {searchNumber} is at position {position}");
+                    found = true;
+                }
             }
         }
     }
