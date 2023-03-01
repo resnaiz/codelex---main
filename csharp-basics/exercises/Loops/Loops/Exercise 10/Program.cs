@@ -20,6 +20,7 @@ namespace Exercise_10
                     int value = input + ((row + col) % squareSize);
                     Console.Write(value);
                 }
+
                 Console.WriteLine();
             }
         }
