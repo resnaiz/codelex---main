@@ -33,6 +33,7 @@ namespace FuelConsumptionCalculator
 
             Console.WriteLine("Car 1:");
             Console.WriteLine("Kilometers per liter: " + car.CalculateConsumption());
+
             if (car.GasHog())
             {
                 Console.WriteLine("Gas hog!");
