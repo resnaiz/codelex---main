@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Exercise_6
+﻿namespace Exercise_6
 {
     public class Dog
     {
@@ -31,12 +25,7 @@ namespace Exercise_6
 
         public bool HasSameMotherAs(Dog otherDog)
         {
-            if (otherDog.Mother == Mother)
-            {
-                return true;
-            }
-
-            return false;
+            return otherDog.Mother == Mother;
         }
 
         public string FathersName()
