@@ -7,11 +7,7 @@ namespace VideoStore
     {
         private List<Video> newInv = new List<Video>();
 
-        public VideoStore(string title, int rating)
-        {
-
-        }
-
+        public VideoStore(string title, int rating) { }  
         public void AddVideo(string title)
         {
             newInv.Add(new Video(title));
@@ -33,7 +29,7 @@ namespace VideoStore
 
         public void ReturnVideo(string title)
         {
-            Video otherVideo = newInv.Find(i => i.Title == title && i.CheckedOut);
+            Video otherVideo = newInv.Find(i => i.Title == title && i.Available());
 
             if(otherVideo != null)
             {

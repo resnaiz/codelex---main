@@ -6,49 +6,49 @@ namespace VideoStore
 {
     class Video
     {
-        public string videoTitle { get; set; }
-        public bool CheckedOut { get; set; }
-        private List<int> videoRatings = new List<int>();
+        public string _VideoTitle { get; set; }
+        private bool _checkedOut { get; set; }
+        private List<int> _videoRatings = new List<int>();
 
         public Video(string title)
         {
-            this.videoTitle = title;
-            this.CheckedOut = false;
+            _VideoTitle = title;
+            _checkedOut = false;
         }
 
         public void BeingCheckedOut()
         {
-            this.CheckedOut = true;
+            _checkedOut = true;
         }
 
         public void BeingReturned()
         {
-            this.CheckedOut = false;
+            _checkedOut = false;
         }
 
         public void ReceivingRating(int rating)
         {
-            this.videoRatings.Add(rating);
+            _videoRatings.Add(rating);
         }
 
         public double AverageRating()
         {
-            if(videoRatings.Count == 0)
+            if(_videoRatings.Count == 0)
             {
                 return 0;
             }
             else
             {
-                return videoRatings.Average();
+                return _videoRatings.Average();
             }
         }
 
         public bool Available()
         {
-            return !CheckedOut;
+            return !_checkedOut;
         }
 
-        public string Title => videoTitle;
+        public string Title => _VideoTitle;
 
         public override string ToString()
         {
