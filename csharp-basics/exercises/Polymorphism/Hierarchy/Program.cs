@@ -9,6 +9,7 @@ namespace Hierarchy
         static void Main(string[] args)
         {
             List<Animal> animals = new List<Animal>();
+
             Console.WriteLine("Enter animal: ");
             string input = Console.ReadLine();
 
@@ -24,16 +25,37 @@ namespace Hierarchy
                 switch (animalType)
                 {
                     case "Mouse":
+                        Console.WriteLine("Enter living region: ");
                         var livingRegion = Console.ReadLine();
                         animal = new Mouse(animalType, animalName, animalWeight, 0, livingRegion);
+                        break;
+                    case "Cat":
+                        Console.WriteLine("Enter cat breed: ");
+                        var catBreed = Console.ReadLine();
+                        Console.WriteLine("Enter living region: ");
+                        var livRegion = Console.ReadLine();
+                        animal = new Cat(animalType, animalName, animalWeight, 0, livRegion, catBreed);
+                        break;
+                    case "Tiger":
+                        Console.WriteLine("Enter living region: ");
+                        var livinRegion = Console.ReadLine();
+                        animal = new Tiger(animalType, animalName, animalWeight, 0, livinRegion);
+                        break;
+                    case "Zebra":
+                        Console.WriteLine("Enter living region: ");
+                        var lRegion = Console.ReadLine();
+                        animal = new Zebra(animalType, animalName, animalWeight, 0, lRegion);
                         break;
                     default:
                         animal = new Mouse(animalType, animalName, animalWeight, 0, "");
                         break;
                 }
 
+                animal.MakeSound();
+
                 Console.WriteLine("Enter food quantity: ");
                 string[] foodInfo = Console.ReadLine().Split();
+
                 Food food;
 
                 switch (foodInfo[0])
@@ -50,25 +72,10 @@ namespace Hierarchy
                 }
 
                 animal.Eat(food);
-                animal.MakeSound();
                 animals.Add(animal);
-
-                //animal..MakeSound();
-                //animal.Eat(food);
-                //animals.Add(animal);
 
                 Console.WriteLine("Enter Animal: ");    
                 input = Console.ReadLine();
-            }
-
-            foreach (Animal animal in animals)
-            {
-                string animalType = animal.GetType().Name;
-                string animalName = animal.AnimalName;
-                double animalWeight = animal.AnimalWeight;
-                //string animalLivingRegion = animal.livingRegion;
-                int foodEaten = animal.FoodEaten;
-
             }
         }
     }

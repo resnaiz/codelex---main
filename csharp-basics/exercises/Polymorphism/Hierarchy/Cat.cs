@@ -1,16 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Hierarchy
 {
     class Cat : Felime
     {
-        public string breed { get; set; }
+        public string Breed { get; set; }
 
         public Cat(string animalType, string animalName, double animalWeight, int foodEaten, string livingRegion, string breed) : base(animalType, animalName, animalWeight, foodEaten, livingRegion)
         {
-            this.breed = breed;
+            this.Breed = breed;
         }
 
         public override void MakeSound()
